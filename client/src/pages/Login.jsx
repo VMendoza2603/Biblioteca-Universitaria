@@ -22,7 +22,7 @@ const Login = () => {
   };
 
   return (
-    <div className="auth-card">
+    <>
       <h1>Iniciar sesión</h1>
       <p>Ingresa tus credenciales para acceder al sistema</p>
 
@@ -61,7 +61,7 @@ const Login = () => {
       <div className="auth-link">
         ¿No tienes cuenta? <Link to="/register">Regístrate</Link>
       </div>
-    </div>
+    </>
   );
 };
 

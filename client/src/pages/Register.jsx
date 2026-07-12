@@ -28,7 +28,7 @@ const Register = () => {
   };
 
   return (
-    <div className="auth-card">
+    <>
       <h1>Crear cuenta</h1>
       <p>Regístrate para acceder al sistema de biblioteca</p>
 
@@ -92,7 +92,7 @@ const Register = () => {
       <div className="auth-link">
         ¿Ya tienes cuenta? <Link to="/login">Inicia sesión</Link>
       </div>
-    </div>
+    </>
   );
 };
 

@@ -1,7 +1,7 @@
 const Book = require('../models/Book');
 const AppError = require('../utils/AppError');
 
-const getAll = async ({ page = 1, limit = 10, search, category }) => {
+const getAll = async ({ page = 1, limit = 10, search, category, available }) => {
   const query = {};
 
   if (search) {
@@ -14,6 +14,10 @@ const getAll = async ({ page = 1, limit = 10, search, category }) => {
 
   if (category) {
     query.category = category;
+  }
+
+  if (available !== undefined) {
+    query.isAvailable = available === 'true';
   }
 
   const skip = (page - 1) * limit;

@@ -1,5 +1,5 @@
 import { useState, useEffect, useCallback } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useSearchParams } from 'react-router-dom';
 import { bookService } from '../services/bookService';
 import { categoryService } from '../services/categoryService';
 import { loanService } from '../services/loanService';
@@ -9,11 +9,13 @@ import { useAuth } from '../context/AuthContext';
 const Books = () => {
   const { user } = useAuth();
   const isAdmin = user?.role === 'admin';
+  const [searchParams] = useSearchParams();
   const [books, setBooks] = useState([]);
   const [categories, setCategories] = useState([]);
   const [loading, setLoading] = useState(true);
   const [search, setSearch] = useState('');
   const [categoryFilter, setCategoryFilter] = useState('');
+  const [availableFilter, setAvailableFilter] = useState(searchParams.get('available') || '');
   const [page, setPage] = useState(1);
   const [totalPages, setTotalPages] = useState(1);
   const [deleteModal, setDeleteModal] = useState(null);
@@ -28,6 +30,7 @@ const Books = () => {
       const params = { page, limit: 10 };
       if (search) params.search = search;
       if (categoryFilter) params.category = categoryFilter;
+      if (availableFilter) params.available = availableFilter;
       const { data } = await bookService.getAll(params);
       setBooks(data.books || data);
       setTotalPages(data.totalPages || 1);
@@ -36,7 +39,7 @@ const Books = () => {
     } finally {
       setLoading(false);
     }
-  }, [page, search, categoryFilter]);
+  }, [page, search, categoryFilter, availableFilter]);
 
   useEffect(() => {
     fetchBooks();
@@ -172,6 +175,18 @@ const Books = () => {
 
       {actionMsg && <div className="alert alert-info">{actionMsg}</div>}
 
+      {availableFilter && (
+        <div style={{ display: 'flex', alignItems: 'center', gap: 'var(--spacing-sm)', marginBottom: 'var(--spacing-md)' }}>
+          <span className="badge badge-info" style={{ display: 'inline-flex', alignItems: 'center', gap: 'var(--spacing-xs)', padding: '4px 12px' }}>
+            {availableFilter === 'true' ? 'Libros disponibles' : 'Libros no disponibles'}
+            <button onClick={() => { setAvailableFilter(''); setPage(1); }}
+              style={{ background: 'none', border: 'none', cursor: 'pointer', fontSize: '14px', lineHeight: 1, color: 'inherit', padding: 0, marginLeft: 4 }}>
+              ✕
+            </button>
+          </span>
+        </div>
+      )}
+
       {loading ? (
         <div className="text-center mt-lg">Cargando libros...</div>
       ) : books.length === 0 ? (
@@ -184,6 +199,7 @@ const Books = () => {
           <table className="data-table">
             <thead>
               <tr>
+                <th style={{ width: 56 }}>Portada</th>
                 <th>Título</th>
                 <th>Autor</th>
                 <th>ISBN</th>
@@ -196,6 +212,18 @@ const Books = () => {
             <tbody>
               {Array.isArray(books) && books.map((book) => (
                 <tr key={book._id}>
+                  <td>
+                    <div className="book-cover-thumb">
+                      {book.image ? (
+                        <img src={book.image} alt={book.title} className="book-cover-img" />
+                      ) : (
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" width="20" height="20">
+                          <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H19a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H6.5A2.5 2.5 0 0 1 4 19.5z"/>
+                          <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M8 2v20"/><path d="M12 6h4"/><path d="M12 10h4"/>
+                        </svg>
+                      )}
+                    </div>
+                  </td>
                   <td style={{ fontWeight: 500 }}>{book.title}</td>
                   <td>{book.author}</td>
                   <td style={{ fontFamily: 'monospace', fontSize: 'var(--font-size-xs)' }}>{book.isbn}</td>
