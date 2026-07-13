@@ -22,13 +22,13 @@ const Login = () => {
   };
 
   return (
-    <>
+    <div className="auth-card">
       <h1>Iniciar sesión</h1>
-      <p>Ingresa tus credenciales para acceder al sistema</p>
+      <p className="auth-subtitle">Ingresa tus credenciales para acceder al sistema</p>
 
-      {error && <div className="alert alert-error">{error}</div>}
+      {error && <div className="alert alert-error" style={{ background: 'rgba(239,68,68,0.15)', color: '#fca5a5', border: '1px solid rgba(239,68,68,0.3)', marginTop: 12, marginBottom: 0 }}>{error}</div>}
 
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit} style={{ marginTop: error ? 12 : 28 }}>
         <div className="form-group">
           <label className="form-label">Correo electrónico</label>
           <input
@@ -41,7 +41,7 @@ const Login = () => {
           />
         </div>
 
-        <div className="form-group">
+        <div className="form-group" style={{ marginTop: 18 }}>
           <label className="form-label">Contraseña</label>
           <input
             type="password"
@@ -53,7 +53,7 @@ const Login = () => {
           />
         </div>
 
-        <button type="submit" className="btn btn-primary" style={{ width: '100%' }}>
+        <button type="submit" className="btn btn-primary" style={{ marginTop: 24 }}>
           Iniciar sesión
         </button>
       </form>
@@ -61,7 +61,7 @@ const Login = () => {
       <div className="auth-link">
         ¿No tienes cuenta? <Link to="/register">Regístrate</Link>
       </div>
-    </>
+    </div>
   );
 };
 

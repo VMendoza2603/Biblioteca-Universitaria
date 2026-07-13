@@ -12,16 +12,18 @@ const AuthLayout = () => {
 
   return (
     <div className="auth-layout">
-      <div className="auth-card">
-        <div style={{ textAlign: 'center', marginBottom: '24px' }}>
-          <svg width="48" height="48" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ display: 'inline-block' }}>
-            <rect x="4" y="8" width="8" height="28" rx="1" fill="#4f46e5" />
-            <rect x="16" y="4" width="8" height="32" rx="1" fill="#6366f1" />
-            <rect x="28" y="6" width="8" height="30" rx="1" fill="#818cf8" />
-            <rect x="4" y="32" width="32" height="5" rx="2" fill="#e2e8f0" opacity="0.3" />
+      <div className="auth-overlay" />
+      <div className="auth-left">
+        <div className="auth-left-inner">
+          <svg className="auth-left-icon" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="4" y="10" width="7" height="22" rx="1.5" fill="#6366f1" />
+            <rect x="14.5" y="4" width="7" height="28" rx="1.5" fill="#818cf8" />
+            <rect x="25" y="7" width="7" height="25" rx="1.5" fill="#a5b4fc" />
           </svg>
           <h1>Biblioteca Universitaria</h1>
         </div>
+      </div>
+      <div className="auth-right">
         <Outlet />
       </div>
     </div>
