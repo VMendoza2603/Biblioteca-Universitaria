@@ -1,0 +1,91 @@
+[{
+  "_id": {
+    "$oid": "6a544195b4ed52399546a208"
+  },
+  "name": "Programación",
+  "description": "Libros de programación y desarrollo de software",
+  "createdAt": {
+    "$date": "2026-07-13T01:38:29.074Z"
+  },
+  "updatedAt": {
+    "$date": "2026-07-13T01:38:29.074Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6a544195b4ed52399546a209"
+  },
+  "name": "Bases de Datos",
+  "description": "Sistemas de gestión de bases de datos",
+  "createdAt": {
+    "$date": "2026-07-13T01:38:29.075Z"
+  },
+  "updatedAt": {
+    "$date": "2026-07-13T01:38:29.075Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6a544195b4ed52399546a20a"
+  },
+  "name": "Matemáticas",
+  "description": "Matemáticas aplicadas y teoría",
+  "createdAt": {
+    "$date": "2026-07-13T01:38:29.075Z"
+  },
+  "updatedAt": {
+    "$date": "2026-07-13T01:38:29.075Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6a544195b4ed52399546a20b"
+  },
+  "name": "Física",
+  "description": "Física general y aplicada",
+  "createdAt": {
+    "$date": "2026-07-13T01:38:29.075Z"
+  },
+  "updatedAt": {
+    "$date": "2026-07-13T01:38:29.075Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6a544195b4ed52399546a20c"
+  },
+  "name": "Redes",
+  "description": "Redes de computadoras y comunicaciones",
+  "createdAt": {
+    "$date": "2026-07-13T01:38:29.075Z"
+  },
+  "updatedAt": {
+    "$date": "2026-07-13T01:38:29.075Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6a544195b4ed52399546a20d"
+  },
+  "name": "Inteligencia Artificial",
+  "description": "IA, machine learning y deep learning",
+  "createdAt": {
+    "$date": "2026-07-13T01:38:29.075Z"
+  },
+  "updatedAt": {
+    "$date": "2026-07-13T01:38:29.075Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6a544195b4ed52399546a20e"
+  },
+  "name": "Literatura",
+  "description": "Literatura general y técnica",
+  "createdAt": {
+    "$date": "2026-07-13T01:38:29.075Z"
+  },
+  "updatedAt": {
+    "$date": "2026-07-13T01:38:29.075Z"
+  }
+}]

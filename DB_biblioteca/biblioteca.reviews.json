@@ -1,0 +1,114 @@
+[{
+  "_id": {
+    "$oid": "6a544195b4ed52399546a21f"
+  },
+  "user": {
+    "$oid": "6a544194b4ed52399546a204"
+  },
+  "book": {
+    "$oid": "6a544195b4ed52399546a210"
+  },
+  "rating": 5,
+  "comment": "Un clásico de la programación",
+  "createdAt": {
+    "$date": "2026-07-13T01:38:29.085Z"
+  },
+  "updatedAt": {
+    "$date": "2026-07-13T01:38:29.085Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6a544195b4ed52399546a21e"
+  },
+  "user": {
+    "$oid": "6a544195b4ed52399546a206"
+  },
+  "book": {
+    "$oid": "6a544195b4ed52399546a211"
+  },
+  "rating": 4,
+  "comment": "Muy completo, aunque algo denso",
+  "createdAt": {
+    "$date": "2026-07-13T01:38:29.085Z"
+  },
+  "updatedAt": {
+    "$date": "2026-07-13T01:38:29.085Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6a544195b4ed52399546a21d"
+  },
+  "user": {
+    "$oid": "6a544195b4ed52399546a206"
+  },
+  "book": {
+    "$oid": "6a544195b4ed52399546a210"
+  },
+  "rating": 5,
+  "comment": "Excelente libro, muy recomendado para aprender buenas prácticas",
+  "createdAt": {
+    "$date": "2026-07-13T01:38:29.085Z"
+  },
+  "updatedAt": {
+    "$date": "2026-07-13T01:38:29.085Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6a544195b4ed52399546a220"
+  },
+  "user": {
+    "$oid": "6a544194b4ed52399546a204"
+  },
+  "book": {
+    "$oid": "6a544195b4ed52399546a21a"
+  },
+  "rating": 5,
+  "comment": "Obra maestra de la literatura",
+  "createdAt": {
+    "$date": "2026-07-13T01:38:29.085Z"
+  },
+  "updatedAt": {
+    "$date": "2026-07-13T01:38:29.085Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6a544195b4ed52399546a221"
+  },
+  "user": {
+    "$oid": "6a544195b4ed52399546a206"
+  },
+  "book": {
+    "$oid": "6a544195b4ed52399546a21a"
+  },
+  "rating": 4,
+  "comment": "Me encantó, una historia fascinante",
+  "createdAt": {
+    "$date": "2026-07-13T01:38:29.085Z"
+  },
+  "updatedAt": {
+    "$date": "2026-07-13T01:38:29.085Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6a545eebac1d0d3f0523dbc7"
+  },
+  "user": {
+    "$oid": "6a54535942d99ebe20d11600"
+  },
+  "book": {
+    "$oid": "6a544195b4ed52399546a219"
+  },
+  "rating": 5,
+  "comment": "Excelente libro",
+  "createdAt": {
+    "$date": "2026-07-13T03:43:39.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-07-13T03:43:39.254Z"
+  }
+}]

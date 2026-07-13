@@ -1,0 +1,46 @@
+[{
+  "_id": {
+    "$oid": "6a544195b4ed52399546a227"
+  },
+  "user": {
+    "$oid": "6a544195b4ed52399546a206"
+  },
+  "book": {
+    "$oid": "6a544195b4ed52399546a213"
+  },
+  "returnDate": null,
+  "status": "active",
+  "loanDate": {
+    "$date": "2026-07-13T01:38:29.088Z"
+  },
+  "createdAt": {
+    "$date": "2026-07-13T01:38:29.088Z"
+  },
+  "updatedAt": {
+    "$date": "2026-07-13T01:38:29.088Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6a545b1642d99ebe20d1169e"
+  },
+  "user": {
+    "$oid": "6a54535942d99ebe20d11600"
+  },
+  "book": {
+    "$oid": "6a544195b4ed52399546a218"
+  },
+  "returnDate": {
+    "$date": "2026-07-13T03:41:22.310Z"
+  },
+  "status": "returned",
+  "loanDate": {
+    "$date": "2026-07-13T03:27:18.743Z"
+  },
+  "createdAt": {
+    "$date": "2026-07-13T03:27:18.744Z"
+  },
+  "updatedAt": {
+    "$date": "2026-07-13T03:41:22.314Z"
+  }
+}]

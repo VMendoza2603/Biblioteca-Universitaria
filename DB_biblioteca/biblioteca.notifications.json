@@ -1,0 +1,35 @@
+[{
+  "_id": {
+    "$oid": "6a5235a8d85a5aa73593966f"
+  },
+  "user": {
+    "$oid": "6a522186be149c4bf4405247"
+  },
+  "loan": {
+    "$oid": "6a52280853f0cdbbb5eddc81"
+  },
+  "message": "Ya paso la fecha de préstamo requerida, favor de devolver el libro",
+  "read": true,
+  "createdAt": {
+    "$date": "2026-07-11T12:23:04.082Z"
+  },
+  "updatedAt": {
+    "$date": "2026-07-11T12:23:34.543Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6a5462aaac1d0d3f0523dc2a"
+  },
+  "user": {
+    "$oid": "6a54535942d99ebe20d11600"
+  },
+  "message": "Tu préstamo vence pronto",
+  "read": false,
+  "createdAt": {
+    "$date": "2026-07-13T03:59:38.007Z"
+  },
+  "updatedAt": {
+    "$date": "2026-07-13T03:59:38.007Z"
+  }
+}]

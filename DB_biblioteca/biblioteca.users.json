@@ -1,0 +1,45 @@
+[{
+  "_id": {
+    "$oid": "6a544194b4ed52399546a204"
+  },
+  "name": "Admin Biblioteca",
+  "email": "admin@biblioteca.com",
+  "password": "$2a$10$vBLEdN/VNoRBESj4e/Uae.H//8yQyDSvgeOf92HU13oCyWdyR69oe",
+  "role": "admin",
+  "createdAt": {
+    "$date": "2026-07-13T01:38:28.946Z"
+  },
+  "updatedAt": {
+    "$date": "2026-07-13T01:38:28.946Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6a544195b4ed52399546a206"
+  },
+  "name": "Usuario Demo",
+  "email": "user@biblioteca.com",
+  "password": "$2a$10$LQ9nVqMllLpKcFY8rXtDWeX9mjQ1VLiTnhpuL.GZBgfINc7cXHT3C",
+  "role": "user",
+  "createdAt": {
+    "$date": "2026-07-13T01:38:29.014Z"
+  },
+  "updatedAt": {
+    "$date": "2026-07-13T01:38:29.014Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6a54535942d99ebe20d11600"
+  },
+  "name": "Victor",
+  "email": "victor@biblioteca.com",
+  "password": "$2a$10$0UmvdBwwYjEg8F9jecJFG.x.dcEURvPiaBfIcDky/hyJimrLkUEZy",
+  "role": "user",
+  "createdAt": {
+    "$date": "2026-07-13T02:54:17.649Z"
+  },
+  "updatedAt": {
+    "$date": "2026-07-13T02:54:17.649Z"
+  }
+}]
