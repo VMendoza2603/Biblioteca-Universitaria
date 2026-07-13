@@ -1,5 +1,6 @@
 import { useAuth } from '../context/AuthContext';
 import NotificationBell from './NotificationBell';
+import ThemeToggle from './ThemeToggle';
 
 const Header = ({ collapsed, onMenuToggle }) => {
   const { user } = useAuth();
@@ -24,6 +25,7 @@ const Header = ({ collapsed, onMenuToggle }) => {
       </div>
 
       <div className="header-right">
+        <ThemeToggle />
         <NotificationBell />
         <div className="header-user">
           <div className="header-avatar">{initials}</div>
